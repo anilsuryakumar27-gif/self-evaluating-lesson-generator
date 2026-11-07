@@ -1,0 +1,293 @@
+{
+  "topic": "Introduction to RAG",
+  "targetPersona": "12th-grade graduate from India (non-English-medium)",
+  "modelProvider": "simulation",
+  "startedAt": "2026-11-07T12:45:30.786Z",
+  "iterations": [
+    {
+      "iteration": 1,
+      "draftLengthWords": 143,
+      "verdict": "NEEDS_REVISION",
+      "score": "1/8",
+      "passed": false,
+      "readabilityMetrics": {
+        "fleschKincaidGrade": 12.3,
+        "avgSentenceLength": 11.6,
+        "longSentenceCount": 2
+      },
+      "checkpoints": [
+        {
+          "id": "CHK-101",
+          "name": "Factual Accuracy & Grounding",
+          "dimension": "Accurate & Grounded",
+          "passed": false,
+          "reason": "RAG is accurately defined as external document retrieval combined with model generation.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-102",
+          "name": "Beginner Language & Readability",
+          "dimension": "Beginner-Friendly Language",
+          "passed": false,
+          "reason": "Flesch-Kincaid Grade Level is 12.3 (exceeds 8.0 ceiling); 2 sentences exceed 22 words",
+          "violations": [
+            {
+              "sentenceIndex": 3,
+              "wordCount": 34,
+              "snippet": "In modern artificial intelligence systems, large language models ar..."
+            },
+            {
+              "sentenceIndex": 4,
+              "wordCount": 24,
+              "snippet": "Therefore, when a user queries an LLM, the model uses dense embeddi..."
+            }
+          ],
+          "remediation": "Split compound sentences into punchy, short lines (<14 words). Use active voice and simple verbs."
+        },
+        {
+          "id": "CHK-103",
+          "name": "Teaches by Example (Cultural Analogy)",
+          "dimension": "Teaches by Example",
+          "passed": false,
+          "reason": "Missing or ungrounded core analogy for the Indian 12th-grade persona.",
+          "remediation": "Anchor the lesson in the Open-Book vs Closed-Book Exam analogy. Compare normal LLMs to closed-book exams and RAG to open-book exams."
+        },
+        {
+          "id": "CHK-104",
+          "name": "Zero Unexplained Jargon",
+          "dimension": "Clear, No Unexplained Jargon",
+          "passed": false,
+          "reason": "Detected ungrounded or overly complex jargon: cosine similarity, dense embeddings, LLM, Vector Database, Prompt.",
+          "violations": [
+            {
+              "term": "cosine similarity",
+              "reason": "Term 'cosine similarity' is too advanced for a 12th-grade beginner. Replace with simple English or an analogy."
+            },
+            {
+              "term": "dense embeddings",
+              "reason": "Term 'dense embeddings' is too advanced for a 12th-grade beginner. Replace with simple English or an analogy."
+            },
+            {
+              "term": "LLM",
+              "reason": "Term 'LLM' was introduced without a nearby plain-English explanation or analogy."
+            },
+            {
+              "term": "Vector Database",
+              "reason": "Term 'Vector Database' was introduced without a nearby plain-English explanation or analogy."
+            },
+            {
+              "term": "Prompt",
+              "reason": "Term 'Prompt' was introduced without a nearby plain-English explanation or analogy."
+            }
+          ],
+          "remediation": "For each flagged term (cosine similarity, dense embeddings, LLM, Vector Database, Prompt), either replace with simple words or immediately follow with a plain-English translation (e.g. 'Vector DB — like a smart digital bookshelf')."
+        },
+        {
+          "id": "CHK-105",
+          "name": "Three-Pillar Curriculum Coverage",
+          "dimension": "Covers the Key Points",
+          "passed": true,
+          "reason": "Covers all three required foundational pillars: What it is, Why it matters, and How it works.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-106",
+          "name": "Coherent Pedagogical Flow",
+          "dimension": "Coherent Teaching Flow",
+          "passed": false,
+          "reason": "Pedagogical ordering is disjointed or out of sequence.",
+          "remediation": "Restructure the lesson into the standard sequence: Problem/Hook -> Core Analogy -> Component Breakdown -> How It Works Diagram -> Indian Example -> Quiz."
+        },
+        {
+          "id": "CHK-107",
+          "name": "Scaffolded Formatting & Diagrams",
+          "dimension": "Visual & Structural Clarity",
+          "passed": false,
+          "reason": "Formatting lacks visual scaffolding: missing visual architecture flowchart, tip/warning callout blocks.",
+          "remediation": "Include an intuitive ASCII/Mermaid diagram illustrating the 3-step pipeline (Question -> Retrieve -> Augment -> Generate)."
+        },
+        {
+          "id": "CHK-108",
+          "name": "Active Learning Check (Quiz with Feedback)",
+          "dimension": "Active Learning",
+          "passed": false,
+          "reason": "Missing interactive self-check quiz or lacks explanation for correct/incorrect choices.",
+          "remediation": "Add 2-3 multiple-choice self-check questions at the end, providing clear explanations for why each option is right or wrong."
+        }
+      ],
+      "draftSnippet": "# Introduction to RAG for Beginners\n\nWelcome to this lesson on RAG.\n\n## What is RAG?\nRAG stands for Retrieval-Augmented Generation. In modern artificial intelligence systems, large language models are trained on large corpuses of public text from the internet, but their internal weights cannot dynam..."
+    },
+    {
+      "iteration": 2,
+      "draftLengthWords": 251,
+      "verdict": "NEEDS_REVISION",
+      "score": "6/8",
+      "passed": false,
+      "readabilityMetrics": {
+        "fleschKincaidGrade": 5.4,
+        "avgSentenceLength": 10.7,
+        "longSentenceCount": 1
+      },
+      "checkpoints": [
+        {
+          "id": "CHK-101",
+          "name": "Factual Accuracy & Grounding",
+          "dimension": "Accurate & Grounded",
+          "passed": true,
+          "reason": "RAG is accurately defined as external document retrieval combined with model generation.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-102",
+          "name": "Beginner Language & Readability",
+          "dimension": "Beginner-Friendly Language",
+          "passed": true,
+          "reason": "Grade Level: 5.4 (Target <= 8), Avg Sentence: 10.7 words.",
+          "violations": [
+            {
+              "sentenceIndex": 3,
+              "wordCount": 35,
+              "snippet": "When an AI does not know an answer, it makes up fake facts with tot..."
+            }
+          ],
+          "remediation": null
+        },
+        {
+          "id": "CHK-103",
+          "name": "Teaches by Example (Cultural Analogy)",
+          "dimension": "Teaches by Example",
+          "passed": true,
+          "reason": "Features a relatable physical analogy (Open-Book Exam) clearly connected to RAG mechanics.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-104",
+          "name": "Zero Unexplained Jargon",
+          "dimension": "Clear, No Unexplained Jargon",
+          "passed": true,
+          "reason": "Zero unexplained technical jargon detected.",
+          "violations": [],
+          "remediation": null
+        },
+        {
+          "id": "CHK-105",
+          "name": "Three-Pillar Curriculum Coverage",
+          "dimension": "Covers the Key Points",
+          "passed": false,
+          "reason": "Missing required curriculum pillars: 'Why it matters'.",
+          "remediation": "Add dedicated sections explicitly titled for the missing pillars: 'Why it matters'."
+        },
+        {
+          "id": "CHK-106",
+          "name": "Coherent Pedagogical Flow",
+          "dimension": "Coherent Teaching Flow",
+          "passed": true,
+          "reason": "Pedagogical flow follows proven scaffolding: Problem -> Analogy -> Architecture -> Quiz.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-107",
+          "name": "Scaffolded Formatting & Diagrams",
+          "dimension": "Visual & Structural Clarity",
+          "passed": false,
+          "reason": "Formatting lacks visual scaffolding: missing visual architecture flowchart, tip/warning callout blocks.",
+          "remediation": "Include an intuitive ASCII/Mermaid diagram illustrating the 3-step pipeline (Question -> Retrieve -> Augment -> Generate)."
+        },
+        {
+          "id": "CHK-108",
+          "name": "Active Learning Check (Quiz with Feedback)",
+          "dimension": "Active Learning",
+          "passed": true,
+          "reason": "Active learning verified: includes interactive self-check questions with explanations.",
+          "remediation": null
+        }
+      ],
+      "draftSnippet": "# Introduction to RAG (Retrieval-Augmented Generation)\n\n## What is an LLM?\nAn LLM (Large Language Model) is a computer program trained on lots of text to talk like a human. But it can make mistakes when answering from memory.\n\n## The Problem: Confident Guessing\nWhen an AI does not know an answer, it..."
+    },
+    {
+      "iteration": 3,
+      "draftLengthWords": 1547,
+      "verdict": "APPROVED_TO_SHIP",
+      "score": "8/8",
+      "passed": true,
+      "readabilityMetrics": {
+        "fleschKincaidGrade": 4.6,
+        "avgSentenceLength": 9.3,
+        "longSentenceCount": 0
+      },
+      "checkpoints": [
+        {
+          "id": "CHK-101",
+          "name": "Factual Accuracy & Grounding",
+          "dimension": "Accurate & Grounded",
+          "passed": true,
+          "reason": "RAG is accurately defined as external document retrieval combined with model generation.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-102",
+          "name": "Beginner Language & Readability",
+          "dimension": "Beginner-Friendly Language",
+          "passed": true,
+          "reason": "Grade Level: 4.6 (Target <= 8), Avg Sentence: 9.3 words.",
+          "violations": [],
+          "remediation": null
+        },
+        {
+          "id": "CHK-103",
+          "name": "Teaches by Example (Cultural Analogy)",
+          "dimension": "Teaches by Example",
+          "passed": true,
+          "reason": "Features a relatable physical analogy (Open-Book Exam) clearly connected to RAG mechanics.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-104",
+          "name": "Zero Unexplained Jargon",
+          "dimension": "Clear, No Unexplained Jargon",
+          "passed": true,
+          "reason": "Zero unexplained technical jargon detected.",
+          "violations": [],
+          "remediation": null
+        },
+        {
+          "id": "CHK-105",
+          "name": "Three-Pillar Curriculum Coverage",
+          "dimension": "Covers the Key Points",
+          "passed": true,
+          "reason": "Covers all three required foundational pillars: What it is, Why it matters, and How it works.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-106",
+          "name": "Coherent Pedagogical Flow",
+          "dimension": "Coherent Teaching Flow",
+          "passed": true,
+          "reason": "Pedagogical flow follows proven scaffolding: Problem -> Analogy -> Architecture -> Quiz.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-107",
+          "name": "Scaffolded Formatting & Diagrams",
+          "dimension": "Visual & Structural Clarity",
+          "passed": true,
+          "reason": "Rich formatting: visual ASCII/Mermaid diagram, tip callouts, bold key phrases.",
+          "remediation": null
+        },
+        {
+          "id": "CHK-108",
+          "name": "Active Learning Check (Quiz with Feedback)",
+          "dimension": "Active Learning",
+          "passed": true,
+          "reason": "Active learning verified: includes interactive self-check questions with explanations.",
+          "remediation": null
+        }
+      ],
+      "draftSnippet": "# Introduction to RAG (Retrieval-Augmented Generation)\n**Lesson Level:** Complete Beginner | **Reading Time:** 10 Minutes  \n**Target Learner:** 12th-Grade Graduate Starting an AI Career  \n**Prerequisites:** None (We start from zero!)\n\n---\n\n## 🎯 What You Will Learn Today\nBy the end of this short les..."
+    }
+  ],
+  "finalStatus": "APPROVED_TO_SHIP",
+  "shippedArtifactPath": null,
+  "totalDurationMs": 1868,
+  "completedAt": "2026-11-07T12:45:32.654Z"
+}

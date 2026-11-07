@@ -1,0 +1,22 @@
+{
+  "name": "rag-content-engine",
+  "version": "1.0.0",
+  "description": "Autonomous Self-Evaluating Lesson Content Generator for GenAI Content Systems",
+  "main": "cli.js",
+  "type": "module",
+  "scripts": {
+    "start": "node cli.js",
+    "web": "node node/web/server.js",
+    "test": "node --test node/tests/*.test.js"
+  },
+  "keywords": [
+    "genai",
+    "agentic-loop",
+    "rag",
+    "content-systems",
+    "self-evaluating",
+    "eval-harness"
+  ],
+  "author": "GenAI Content Systems Candidate",
+  "license": "MIT"
+}

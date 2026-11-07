@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-content-engine"
+version = "1.0.0"
+description = "Autonomous Self-Evaluating Lesson Content Generator for GenAI Content Systems"
+authors = [{ name = "GenAI Content Systems Candidate" }]
+dependencies = [
+    "pydantic>=2.0.0",
+    "rich>=13.0.0"
+]
+requires-python = ">=3.10"
